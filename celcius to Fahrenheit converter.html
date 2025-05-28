@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>celcius to fahrenheit</title>
+
+</head>
+<body>
+   <div>
+   <input type="text" id="input" placeholder="enter a celcius value">
+   <button type="sumbit" onclick="convert()"> convert</button></div>
+   <div id="result">
+
+   </div>
+   <script>
+      function convert(){
+         let cel = Number( document.getElementById("input").value);
+         let fra = cel*(9/5)+32
+         let result = document.getElementById("result")
+         result.innerHTML = fra
+      }
+   </script>
+</body>
+</html>
